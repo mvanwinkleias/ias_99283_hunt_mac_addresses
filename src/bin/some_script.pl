@@ -3,4 +3,12 @@
 use strict;
 use warnings;
 
-print "This is in a repo now\n!"
+use FindBin qw($RealBin);
+use lib "$RealBin/../lib/perl5";
+
+use NCSU::Darren;
+
+NCSU::Darren::say_hello();
+
+
+
